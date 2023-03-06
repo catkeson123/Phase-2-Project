@@ -1,4 +1,4 @@
-Search () {
+function Search () {
     return (
         <div>
             <h1>Search HOLDER</h1>
