@@ -12,7 +12,7 @@ function Form ({addBeerState}) {
         let newBeerObj = {
             name: name,
             tagline: tagline,
-            image: image,
+            image_url: image,
             description: description,
             contributer: contributer,
         }
