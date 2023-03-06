@@ -8,6 +8,8 @@ function BeerContainer({ beerList, updateSearch }) {
       name={beer.name}
       tagline={beer.tagline}
       image={beer.image_url}
+      description={beer.description}
+      contribute={beer.contributed_by}
     />
   ));
 
