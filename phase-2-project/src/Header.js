@@ -22,6 +22,10 @@ function Header() {
     return beer.name.toLowerCase().includes(searchTerm);
   });
 
+  const addBeerState = (newBeerObj) => {
+    setBeerList([...beerList, newBeerObj]) 
+  }
+
   return (
     <div>
       <NavBar />
@@ -30,7 +34,7 @@ function Header() {
           <BeerContainer beerList={searchedBeers} updateSearch={updateSearch} />
         </Route>
         <Route path="/form">
-          <Form />
+          <Form addBeerState={addBeerState} />
         </Route>
         <Route path="/">
           <Home />
