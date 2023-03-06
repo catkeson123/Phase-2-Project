@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function Form ({addBeerState}) {
     const [name, setName] = useState("")
@@ -6,6 +7,7 @@ function Form ({addBeerState}) {
     const [image, setImage] = useState("")
     const [description, setDescription] = useState("")
     const [contributer, setContributer] = useState("")
+    let history = useHistory()
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -24,6 +26,8 @@ function Form ({addBeerState}) {
             .then(r => r.json())
             .then(addBeerState)
             e.target.reset()
+            history.push("/beers")
+
     }
     return (
         <div>

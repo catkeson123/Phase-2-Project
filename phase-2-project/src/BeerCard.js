@@ -8,7 +8,7 @@ const handleFlip =() =>{
 }
 
   return (
-    <div onClick={(handleFlip)}>
+    <div className="container text-center" onClick={(handleFlip)}>
       <h1>{name}</h1>
       {showFront ? <img src={image} alt={name}/> : <p>{description}</p>}
       <h2>{showFront ? tagline : contribute}</h2>

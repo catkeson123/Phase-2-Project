@@ -17,3 +17,71 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+button, .button {
+  appearance: auto;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+  color: var(--primary);
+  background-color: var(--background);
+  border: 2px solid var(--dark-turquoise);
+  transition: background-color 0.2s;
+}
+
+button.active,
+button:focus,
+button:hover,
+.button.active,
+.button:focus,
+.button:hover {
+  outline: none;
+  color: var(--background);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+button:disabled,
+.button:disabled {
+  cursor: not-allowed;
+  color: var(--dark-grey);
+  background-color: var(--grey);
+}
+
+button.blue,
+.button.blue {
+  border: 2px solid var(--blue-dark);
+  color: var(--blue);
+}
+
+button.blue.active,
+button.blue:focus,
+button.blue:hover,
+.button.blue.active,
+.button.blue:focus,
+.button.blue:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.navigation * {
+  margin: 0 0.5rem;
+}
+
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}

@@ -23,7 +23,7 @@ function Header() {
   });
 
   const addBeerState = (newBeerObj) => {
-    setBeerList([...beerList, newBeerObj]) 
+    setBeerList([newBeerObj, ...beerList]) 
   }
 
   return (

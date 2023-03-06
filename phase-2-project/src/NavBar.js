@@ -1,48 +1,43 @@
 import { NavLink } from "react-router-dom";
-const linkStyles = {
-    display: "inline-block",
-    width: "50px",
-    padding: "12px",
-    margin: "0 6px 6px",
-    background: "blue",
-    textDecoration: "none",
-    color: "white",
-  };
+
   
   function NavBar() {
     return (
-      <div>
-        <NavLink
-          to="/"
-          exact
-          style={linkStyles}
-          activeStyle={{
-            background: "darkblue",
-          }}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/beers"
-          exact
-          style={linkStyles}
-          activeStyle={{
-            background: "darkblue",
-          }}
-        >
-          Beers
-        </NavLink>
-        <NavLink
-          to="/form"
-          exact
-          style={linkStyles}
-          activeStyle={{
-            background: "darkblue",
-          }}
-        >
-          Add a New Beer
-        </NavLink>
-      </div>
+      <nav>
+        <div className="navigation">
+          <NavLink
+            to="/"
+            exact
+            activeStyle={{
+              background: "yellow" ,
+            }}
+            className="button"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/beers"
+            exact
+            activeStyle={{
+              background: "yellow",
+            }}
+            className="button"
+          >
+            Beers
+          </NavLink>
+          <NavLink
+            to="/form"
+            exact
+            activeStyle={{
+              background: "yellow",
+            }}
+            className="button"
+          >
+            Add a New Beer
+          </NavLink>
+        </div>
+       
+      </nav>
     );
   }
 
