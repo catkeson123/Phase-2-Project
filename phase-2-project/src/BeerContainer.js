@@ -1,7 +1,7 @@
 import BeerCard from "./BeerCard";
 import Search from "./Search";
 
-function BeerContainer({ beerList }) {
+function BeerContainer({ beerList, updateSearch }) {
   const beerCards = beerList.map((beer) => (
     <BeerCard
       key={beer.id}
@@ -11,7 +11,12 @@ function BeerContainer({ beerList }) {
     />
   ));
 
-  return <div>{beerCards}</div>;
+  return (
+    <div>
+      <Search updateSearch={updateSearch} />
+      {beerCards}
+    </div>
+  );
 }
 
 export default BeerContainer;

@@ -14,12 +14,20 @@ function Header() {
       .then(setBeerList);
   }, []);
 
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const updateSearch = (newString) => setSearchTerm(newString.toLowerCase());
+
+  const searchedBeers = beerList.filter((beer) => {
+    return beer.name.toLowerCase().includes(searchTerm);
+  });
+
   return (
     <div>
       <NavBar />
       <Switch>
         <Route path="/beers">
-          <BeerContainer beerList={beerList} />
+          <BeerContainer beerList={searchedBeers} updateSearch={updateSearch} />
         </Route>
         <Route path="/form">
           <Form />
