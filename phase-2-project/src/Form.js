@@ -30,46 +30,64 @@ function Form ({addBeerState}) {
 
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label for="name">Enter Name of Beer:</label>
-                <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    onChange={e => setName(e.target.value)}
-                />
-                <label for="tagline">Enter Tagline:</label>
-                <input 
-                    type="text" 
-                    id="tagline" 
-                    name="tagline"
-                    onChange={e => setTagLine(e.target.value)}
-                />
-                <label for="image">Enter Image:</label>
-                <input 
-                    type="text" 
-                    id="image" 
-                    name="image"
-                    onChange={e => setImage(e.target.value)}
-                />
-                <label for="description">Enter Description of Beer:</label>
-                <input 
-                    type="text" 
-                    id="description" 
-                    name="description" 
-                    onChange={e => setDescription(e.target.value)}
-                />
-                <label for="contributer">Enter Name of Contributer:</label>
-                <input 
-                    type="text" 
-                    id="contributer" 
-                    name="contributer" 
-                    onChange={e => setContributer(e.target.value)}
-                />
-                <button>Submit</button>
-            </form>
+        <div className="row">
+            <div className="mx-auto col-10 col-md-8 col-lg-6">
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label className="form-label" for="name">Enter Name of Beer:</label>
+                        <input
+                            className="form-control" 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            onChange={e => setName(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label className="form-label" for="tagline">Enter Tagline:</label>
+                        <input 
+                            className="form-control"
+                            type="text" 
+                            id="tagline" 
+                            name="tagline"
+                            onChange={e => setTagLine(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label className="form-label" for="image">Enter Image:</label>
+                        <input 
+                            className="form-control"
+                            type="text" 
+                            id="image" 
+                            name="image"
+                            onChange={e => setImage(e.target.value)}
+                        /> 
+                    </div>
+                    <div className="mb-3">
+                        <label className="form-label" for="description">Enter Description of Beer:</label>
+                        <input 
+                            className="form-control"
+                            type="text" 
+                            id="description" 
+                            name="description" 
+                            onChange={e => setDescription(e.target.value)}
+                        />
+                    </div>
+                    <div className="mb-3">
+                        <label className="form-label" for="contributer">Enter Name of Contributer:</label>
+                        <input 
+                            className="form-control"
+                            type="text" 
+                            id="contributer" 
+                            name="contributer" 
+                            onChange={e => setContributer(e.target.value)}
+                        />
+                    </div>
+                    <button className="btn btn-primary btn-customized mt-4">Submit</button>
+                </form>
+            </div>
         </div>
+        
     )
 }
 

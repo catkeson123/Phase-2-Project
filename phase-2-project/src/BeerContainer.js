@@ -14,9 +14,11 @@ function BeerContainer({ beerList, updateSearch }) {
   ));
 
   return (
-    <div>
+    <div className="container text-center">
       <Search updateSearch={updateSearch} />
-      {beerCards}
+      <div className='row g-2'>
+        {beerCards}
+      </div>
     </div>
   );
 }

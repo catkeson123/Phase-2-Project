@@ -1,7 +1,7 @@
 function Search({ updateSearch }) {
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Beer:</label>
+      <label className="beerInfo" htmlFor="search">Search Beer:</label>
       <input
         type="text"
         id="search"

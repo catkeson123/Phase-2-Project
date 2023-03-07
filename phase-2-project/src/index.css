@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://www.gannett-cdn.com/presto/2019/01/23/PMJS/42557c0e-4666-4566-95fb-020e20b57bc0-GoodCity-downtownOakRoom.JPG?width=660&height=440&fit=crop&format=pjpg&auto=webp);
+  background-size: cover;
+  color: white;
 }
 
 code {
@@ -84,4 +87,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+.form-label {
+  font-size: large;
+  font-weight: bolder;
+  background-color: rgba(105, 105, 105, 0.765);
+  display: flex;
+}
+
+.beerimage {
+  max-height: 65%;
+}
+
+.col-4 {
+  height: 600px;
+}
+
+.beerInfo {
+  background-color: rgba(105, 105, 105, 0.765);
 }

@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
             to="/"
             exact
             activeStyle={{
-              background: "yellow" ,
+              background: "rgba(105, 105, 105, 0.765)" ,
             }}
             className="button"
           >
@@ -19,7 +19,7 @@ import { NavLink } from "react-router-dom";
             to="/beers"
             exact
             activeStyle={{
-              background: "yellow",
+              background: "rgba(105, 105, 105, 0.765)",
             }}
             className="button"
           >
@@ -29,7 +29,7 @@ import { NavLink } from "react-router-dom";
             to="/form"
             exact
             activeStyle={{
-              background: "yellow",
+              background: "rgba(105, 105, 105, 0.765)",
             }}
             className="button"
           >
