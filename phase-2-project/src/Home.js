@@ -15,9 +15,11 @@ function Home() {
 
   return (
     <div>
-      <h1>HOME PAGE</h1>
-      <button onClick={handleClick}>Generate Beer Fact</button>
-      <h4>{fact}</h4>
+      <h1 className="homeHeader">Brew Dog Brewery</h1>
+      <div className="theButtons"><button className="btn btn-primary btn-customized mt-4" onClick={handleClick}>Generate Beer Fact</button>
+      </div>
+
+      <h4 className="homeHeader">{fact}</h4>
     </div>
   );
 }

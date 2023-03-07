@@ -83,7 +83,9 @@ function Form ({addBeerState}) {
                             onChange={e => setContributer(e.target.value)}
                         />
                     </div>
-                    <button className="btn btn-primary btn-customized mt-4">Submit</button>
+                    <div className="theButtons"> 
+                        <button className="btn btn-primary btn-customized mt-4">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
