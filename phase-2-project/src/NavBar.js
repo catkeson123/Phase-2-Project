@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
             }}
             className="button"
           >
-            Home
+            <img src = "https://em-content.zobj.net/source/microsoft-teams/337/beer-mug_1f37a.png" alt="Home"></img>
           </NavLink>
           <NavLink
             to="/beers"
